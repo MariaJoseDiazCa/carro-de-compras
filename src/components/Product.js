@@ -14,12 +14,12 @@ const styles = {
   },
 };
 
-class Producto extends Component {
+class Product extends Component {
   render() {
     const { producto, agregarAlCarro } = this.props;
     return (
       <div style={styles.producto}>
-        <img alt={Producto.name} src={producto.img} />
+        <img alt={producto.name} src={producto.img} />
         <h3>{producto.name}</h3>
         <p>{producto.price}</p>
         <Button onClick={() => agregarAlCarro(producto)}>
@@ -29,4 +29,4 @@ class Producto extends Component {
     );
   }
 }
-export default Producto;
+export default Product;

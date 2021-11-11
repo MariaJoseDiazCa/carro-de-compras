@@ -1,5 +1,5 @@
 import { Component } from "react";
-import Producto from "./Producto";
+import Product from "./Product";
 
 const styles = {
   productos: {
@@ -9,14 +9,14 @@ const styles = {
   },
 };
 
-class Productos extends Component {
+class Products extends Component {
   render() {
     const { productos, agregarAlCarro } = this.props;
 
     return (
       <div style={styles.productos}>
         {productos.map((producto) => (
-          <Producto
+          <Product
             agregarAlCarro={agregarAlCarro}
             key={producto.name}
             producto={producto}
@@ -27,4 +27,4 @@ class Productos extends Component {
   }
 }
 
-export default Productos;
+export default Products;
